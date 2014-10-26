@@ -1,0 +1,65 @@
+.msupload li {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.msupload li img
+{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+}
+
+.msupload  li .progress {
+    width: 20%;
+    height: 15px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    background-color: red;
+}
+
+.msupload  li button.delete {
+    position: absolute;
+    background-color: red;
+    color: white;
+    width: 20px;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.msupload  li button.main {
+    position: absolute;
+    background-color: blue;
+    color: white;
+    width: 20px;
+    top: 0;
+    right: 25px;
+    z-index: 10;
+}
+
+
+.msupload li .handle {
+    width: 250px;
+    height: 25px;
+    position: absolute;
+    cursor: move;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    content: '↔';
+    z-index: 9;
+}
+
+.msupload:after {
+    content: '';
+    clear: both;
+}
